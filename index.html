@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Stardust Collective</title>
+  <style type="text/css">
+    .blinking-cursor {
+      font-weight: 600;
+      font-size: 20px;
+      color: #40525d;
+      animation: 1s blink step-end infinite;
+    }
+
+    @keyframes blink {
+      from, to {
+        color: transparent;
+      }
+      50% {
+        color: black;
+      }
+    }
+
+  </style>
 </head>
 <body>
-<div style="margin: 20px">
-  waiting for command...
+<div style="margin: 20px; font-family: monospace; font-size: 22px">
+  <span>waiting for command...</span><span class="blinking-cursor">|</span>
 </div>
 
 </body>
